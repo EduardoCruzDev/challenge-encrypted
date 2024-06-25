@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <header>
+
+        Encriptador de Texto
+
+    </header>
+
+
+    <main class="superText">
+
+       <!-- Parte I -->
+        <section class="main__section">
+        <div>
+            <label for="inputText" class="label__format">Ingrese el texto aqui</label>
+            <input type="text" id="inputText"class="texto__encriptador"></input>
+            
+        </div>
+
+        <div class="div_super">
+            <div>
+            <p class="parrafo__principal__texto">Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="parrafo__principal">
+                <button onclick="encriptarTexto()" class="encriptar__boton">Encriptar</button>
+                <button onclick="desencriptarTexto()" class="desencriptar__boton">Desencriptar</button>
+        
+            </div>
+        </div>
+        </section>
+        <!-- Parte II -->
+        <div class="parrafo__secundario">
+
+
+            <label id="label" for="outputText" class="label__format__2">
+            </label>
+            <textarea hidden id="outputText"class="parrafo__secundario__show" rows="5"></textarea>
+
+            <img id="img_unica" class ="imagenTexto__secundario" src="./img/puppet.png" alt="find something guy." />
+            
+            <label id="label2" for="textBase" class="label__format__2">Ningun Mensaje fue encontrado
+                </label>
+            <textarea id="textBase"class="parrafo__secundario__text" rows="5">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+        
+            <button onclick="copiarTexto()" class="container__boton" id="botonOculto" hidden>Copiar</button>
+        </div>
+    </main>
+
+
+    <footer>
+
+        EduardoCruzDev - 2024
+
+    </footer>
+    
+</body>
+</html>
