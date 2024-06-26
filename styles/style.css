@@ -38,6 +38,15 @@ main.superText {
     flex: 1;
     padding: 2rem;
 }
+.div__super{
+    display:flex;
+    gap:30px;
+    padding: 10px;
+}
+
+.imgs{
+    height: 100%;
+}
 
 .main__section {
     flex: 1;
@@ -214,6 +223,10 @@ main.superText {
     .imagenTexto__secundario {
        display: none;
     }
+    
+    .imgs{
+        width:40%
+    }
 }
 /* Media Query para Celular */
 @media (max-width: 480px) {
@@ -247,4 +260,8 @@ main.superText {
     .imagenTexto__secundario {
         display: none;
      }
+
+     .imgs{
+        width:20%
+    }
 }
