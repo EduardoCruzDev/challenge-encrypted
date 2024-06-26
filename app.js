@@ -1,10 +1,10 @@
 function encriptarTexto(){
 
-    var textoOriginal = document.getElementById("inputText").value;
+    let textoOriginal = document.getElementById("inputText").value;
   
-    var caracteres = textoOriginal.split("");
+    let caracteres = textoOriginal.split("");
 
-    for (var i = 0; i < caracteres.length; i++) {
+    for (let i = 0; i < caracteres.length; i++) {
         switch (caracteres[i]) {
             case 'a':
                 caracteres[i] = 'ai';
@@ -26,7 +26,7 @@ function encriptarTexto(){
                 break;
         }
 
-        var textoEncriptado = caracteres.join("");
+        let textoEncriptado = caracteres.join("");
 
   document.getElementById("outputText").value = textoEncriptado;
 
@@ -40,9 +40,9 @@ mostrarElemento();
 
 function desencriptarTexto(){
 
-    var textoOriginal = document.getElementById("inputText").value;
+    let textoOriginal = document.getElementById("inputText").value;
   
-  var textoEncriptado = textoOriginal.replace(/ai/g,"a").replace(/enter/g,"e").replace(/imes/g,"i").replace(/ober/g,"o").replace(/ufat/g,"u");
+  let textoEncriptado = textoOriginal.replace(/ai/g,"a").replace(/enter/g,"e").replace(/imes/g,"i").replace(/ober/g,"o").replace(/ufat/g,"u");
   
   document.getElementById("outputText").value = textoEncriptado;
 
@@ -50,7 +50,7 @@ function desencriptarTexto(){
 
 function mostrarBoton(){
 
-    var botonOculto = document.getElementById("botonOculto");
+    let botonOculto = document.getElementById("botonOculto");
         botonOculto.removeAttribute('hidden');
 
 }
@@ -75,7 +75,7 @@ function ocultarElementos(){
 
 function mostrarElemento(){
 
-    var textoOculto = document.getElementById("outputText");
+    let textoOculto = document.getElementById("outputText");
         textoOculto.removeAttribute('hidden');
 
 }
