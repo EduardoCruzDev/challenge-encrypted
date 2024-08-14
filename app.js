@@ -1,7 +1,14 @@
+function aviso(){
+    alert("Ingresa el texto a desencriptar \n Solo se admiten minusculas \n Si ingresas una mayuscula se transformara en minuscula");
+}
+
+
 function encriptarTexto(){
 
-    let textoOriginal = document.getElementById("inputText").value;
-  
+    let textoOriginalIgnore = document.getElementById("inputText").value;
+
+    let textoOriginal= textoOriginalIgnore.toLowerCase();
+    
     let caracteres = textoOriginal.split("");
 
     for (let i = 0; i < caracteres.length; i++) {
@@ -58,10 +65,10 @@ function mostrarBoton(){
 function copiarTexto(){
     navigator.clipboard.writeText(document.getElementById("outputText").value)
   .then(() => {
-    console.log('Texto copiado al portapapeles')
+    alert('Texto copiado al portapapeles')
   })
   .catch(err => {
-    console.error('Error al copiar al portapapeles:', err)
+    alert('Error al copiar al portapapeles:', err)
   })
 }
 function ocultarElementos(){
